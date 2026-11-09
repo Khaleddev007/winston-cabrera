@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Winston Cabrera | Financial Advisor – Insurance, Investments &amp; Mortgages</title>
+    <meta name="description"
+      content="Let’s talk about your financial future. Winston Cabrera helps individuals and families with insurance, investments and mortgages. Book a free 20-minute call.">
+    <meta name="author" content="Winston Cabrera">
+    <meta name="theme-color" content="#094EEA">
+    <link rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0B1F'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='38' fill='%23094EEA'%3EW%3C/text%3E%3C/svg%3E">
+
+    <!-- Social sharing (add og:image / og:url once your domain is live) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Winston Cabrera">
+    <meta property="og:title" content="Winston Cabrera | Let’s Talk About Your Financial Future">
+    <meta property="og:description"
+      content="A simple conversation today could help you take the next step toward financial clarity. Book a free 20-minute call.">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script>
+      document.documentElement.classList.add('js')
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,700..900&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+      tailwind.config = { theme: { extend: {
+  colors: {
+    accent: '#094EEA',
+    'accent-dark': '#0640BF',
+    navy: '#0B0B1F',
+    ink: '#14141C',
+    mute: '#5E5E6B',
+    line: '#E6E6EE',
+    soft: '#F7F7FA'
+  },
+  fontFamily: {
+    heading: ['Archivo', 'Arial Black', 'sans-serif'],
+    sans: ['Inter', 'system-ui', 'sans-serif']
+  }
+} } }
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 font-sans text-[15px] transition duration-300 active:scale-[.97] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent; }
+  .btn-accent { @apply bg-accent text-white hover:bg-accent-dark hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-px; }
+  .btn-ghost { @apply border border-ink/25 bg-white/70 text-ink backdrop-blur hover:border-accent hover:text-accent; }
+  .btn-light { @apply bg-white text-navy hover:bg-soft hover:-translate-y-px; }
+  .btn-xl { @apply px-10 py-5 text-[1.05rem] sm:text-lg; }
+  .hd { @apply font-heading uppercase leading-[.95] tracking-tight; }
+  .h2 { @apply hd text-[1.85rem] sm:text-[2.4rem] md:text-[2.9rem]; }
+}
+</style>
+    <style>
+      html {
+        scroll-padding-top: 5rem;
+      }
+
+      body {
+        font-family: Inter, system-ui, sans-serif;
+        font-weight: 400;
+        font-size: 1.0625rem;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: Archivo, 'Arial Black', sans-serif;
+        font-stretch: 125%;
+        font-weight: 800;
+      }
+
+      .font-heading {
+        font-family: Archivo, 'Arial Black', sans-serif;
+        font-stretch: 125%;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      :focus-visible {
+        outline: 2px solid #094EEA;
+        outline-offset: 3px;
+      }
+
+      .hero-bg {
+        background: radial-gradient(60rem 30rem at 85% 0%, rgba(9, 78, 234, .08), transparent 60%), linear-gradient(180deg, #fff 0%, #F7F7FA 100%);
+      }
+
+      /* Reveal animations */
+      .rise {
+        animation: rise 1s cubic-bezier(.22, 1, .36, 1) both;
+        animation-delay: var(--d, 0s);
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(22px);
+        }
+      }
+
+      .js .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity .9s cubic-bezier(.22, 1, .36, 1), transform .9s cubic-bezier(.22, 1, .36, 1);
+        transition-delay: var(--d, 0s);
+      }
+
+      .js .reveal.in {
+        opacity: 1;
+        transform: none;
+      }
+
+      /* Social buttons (footer) */
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        padding: 0;
+        font-family: Archivo, 'Arial Black', sans-serif;
+        font-stretch: 125%;
+        font-weight: 800;
+        font-size: .8rem;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        color: #fff;
+        white-space: nowrap;
+        transition: background-color .3s ease, transform .3s cubic-bezier(.22, 1, .36, 1), box-shadow .3s ease;
+      }
+
+      .social:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .35);
+      }
+
+      .social:focus-visible {
+        outline: 2px solid #094EEA;
+        outline-offset: 3px;
+      }
+
+      .social svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      .social-label {
+        display: none;
+      }
+
+      @media (min-width: 640px) {
+        .social {
+          width: 100%;
+          height: auto;
+          border-radius: 9999px;
+          padding: .8rem 1rem;
+        }
+
+        .social svg {
+          width: 1.1rem;
+          height: 1.1rem;
+        }
+
+        .social-label {
+          display: inline;
+        }
+      }
+
+      .social-fb {
+        background: #1877F2;
+      }
+
+      .social-fb:hover {
+        background: #0F63D1;
+      }
+
+      .social-ig {
+        background: linear-gradient(45deg, #F58529 0%, #DD2A7B 50%, #8134AF 100%);
+      }
+
+      .social-ig:hover {
+        filter: brightness(.94);
+      }
+
+      .social-tt {
+        background: #000;
+      }
+
+      .social-tt:hover {
+        background: #1f1f1f;
+      }
+
+      .social-li {
+        background: #0A66C2;
+      }
+
+      .social-li:hover {
+        background: #004182;
+      }
+
+      /* Modal */
+      .modal {
+        visibility: hidden;
+        pointer-events: none;
+        transition: visibility 0s .5s;
+      }
+
+      .modal[data-open="true"] {
+        visibility: visible;
+        pointer-events: auto;
+        transition-delay: 0s;
+      }
+
+      .modal .m-back {
+        opacity: 0;
+        transition: opacity .45s ease;
+      }
+
+      .modal[data-open="true"] .m-back {
+        opacity: 1;
+      }
+
+      .modal .m-panel {
+        transform: translateY(100%);
+        transition: transform .55s cubic-bezier(.22, 1, .36, 1), max-width .4s ease;
+      }
+
+      .modal[data-open="true"] .m-panel {
+        transform: none;
+      }
+
+      @media (min-width: 640px) {
+        .modal .m-panel {
+          transform: translateY(24px) scale(.95);
+          opacity: 0;
+          transition: transform .55s cubic-bezier(.22, 1, .36, 1), opacity .35s ease;
+        }
+
+        .modal[data-open="true"] .m-panel {
+          transform: none;
+          opacity: 1;
+        }
+      }
+
+      /* Steps */
+      .step {
+        display: none;
+      }
+
+      .step.active {
+        display: block;
+        animation: stepIn .5s cubic-bezier(.22, 1, .36, 1) both;
+      }
+
+      .step.active.back {
+        animation-name: stepBack;
+      }
+
+      @keyframes stepIn {
+        from {
+          opacity: 0;
+          transform: translateX(28px);
+        }
+      }
+
+      @keyframes stepBack {
+        from {
+          opacity: 0;
+          transform: translateX(-28px);
+        }
+      }
+
+      .pop {
+        animation: pop .35s cubic-bezier(.22, 1, .36, 1) both;
+        animation-delay: calc(var(--i, 0) * 25ms);
+      }
+
+      @keyframes pop {
+        from {
+          opacity: 0;
+          transform: scale(.94) translateY(4px);
+        }
+      }
+
+      /* Calendar */
+      .cal-day {
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        font-size: .95rem;
+        color: #14141C;
+        transition: background .2s, color .2s, transform .2s, box-shadow .2s;
+      }
+
+      .cal-day:not(:disabled):hover {
+        background: rgba(9, 78, 234, .1);
+        color: #0640BF;
+      }
+
+      .cal-day:disabled {
+        color: #B9B9C6;
+        cursor: not-allowed;
+      }
+
+      .cal-day.avail {
+        font-weight: 500;
+        background: #F7F7FA;
+      }
+
+      .cal-day.today {
+        box-shadow: inset 0 0 0 1.5px #094EEA;
+      }
+
+      .cal-day[aria-pressed="true"] {
+        background: #094EEA;
+        color: #fff;
+        box-shadow: 0 10px 20px -8px rgba(9, 78, 234, .55);
+        transform: scale(1.04);
+      }
+
+      .chip {
+        transition: all .25s cubic-bezier(.22, 1, .36, 1);
+      }
+
+      .chip:hover:not(:disabled) {
+        border-color: #094EEA;
+        transform: translateY(-1px);
+      }
+
+      .chip[aria-pressed="true"] {
+        background: #094EEA;
+        border-color: #094EEA;
+        color: #fff;
+        box-shadow: 0 10px 20px -8px rgba(9, 78, 234, .55);
+      }
+
+      .field {
+        width: 100%;
+        border: 1px solid #D6D6E0;
+        border-radius: .875rem;
+        background: #fff;
+        padding: 1.45rem 1rem .5rem;
+        font-size: 1rem;
+        color: #14141C;
+        outline: none;
+        transition: border-color .25s, box-shadow .25s;
+      }
+
+      .field:focus {
+        border-color: #094EEA;
+        box-shadow: 0 0 0 4px rgba(9, 78, 234, .14);
+      }
+
+      .field.invalid {
+        border-color: #b91c1c;
+      }
+
+      .flabel {
+        position: absolute;
+        left: 1rem;
+        top: 1.05rem;
+        font-size: .95rem;
+        color: #6b6b76;
+        pointer-events: none;
+        transition: all .2s ease;
+      }
+
+      .field:focus+.flabel,
+      .field:not(:placeholder-shown)+.flabel {
+        top: .45rem;
+        font-size: .7rem;
+        font-weight: 500;
+        color: #094EEA;
+      }
+
+      .shake {
+        animation: shake .45s;
+      }
+
+      @keyframes shake {
+
+        20%,
+        60% {
+          transform: translateX(-6px);
+        }
+
+        40%,
+        80% {
+          transform: translateX(6px);
+        }
+      }
+
+      .check-wrap {
+        animation: checkPop .6s cubic-bezier(.22, 1, .36, 1) both;
+      }
+
+      @keyframes checkPop {
+        from {
+          opacity: 0;
+          transform: scale(.8);
+        }
+      }
+
+      .check-c {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        animation: draw .7s .15s cubic-bezier(.65, 0, .35, 1) forwards;
+      }
+
+      .check-p {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        animation: draw .45s .75s cubic-bezier(.65, 0, .35, 1) forwards;
+      }
+
+      @keyframes draw {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      .spin {
+        animation: spin .8s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      #drawer a {
+        transition: padding .3s, color .3s;
+      }
+
+      #drawer a:hover {
+        padding-left: .5rem;
+        color: #094EEA;
+      }
+
+      .slots-scroll {
+        scrollbar-width: thin;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: .01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: .01ms !important;
+        }
+
+        .js .reveal {
+          opacity: 1;
+          transform: none;
+        }
+
+        .check-c,
+        .check-p {
+          stroke-dashoffset: 0 !important;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body class="bg-white font-sans text-ink antialiased selection:bg-accent selection:text-white">
+
+    <a href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:rounded-full focus:bg-accent focus:px-5 focus:py-2 focus:text-white">Skip
+      to content</a>
+
+    <!-- ================= HEADER ================= -->
+    <header class="sticky top-0 z-40 border-b border-line bg-white/90 backdrop-blur-md">
+      <div class="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 sm:px-8">
+        <a href="#top" class="font-heading text-[1.35rem] leading-none tracking-tight">Winston Cabrera</a>
+
+        <nav class="hidden items-center gap-9 md:flex" aria-label="Main">
+          <a href="#about"
+            class="font-heading text-[14px] tracking-wide text-ink transition hover:text-accent">About</a>
+          <a href="#offer" class="font-heading text-[14px] tracking-wide text-ink transition hover:text-accent">What I
+            Offer</a>
+          <button type="button" data-book
+            class="btn btn-accent font-heading !py-2.5 !text-[13px] tracking-wide">Schedule Free Call</button>
+        </nav>
+
+        <button type="button" id="menuOpen" class="-mr-2 p-2 md:hidden" aria-label="Open menu" aria-controls="drawer"
+          aria-expanded="false">
+          <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            viewBox="0 0 24 24">
+            <path d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE DRAWER ================= -->
+    <div id="overlay"
+      class="fixed inset-0 z-50 hidden bg-black/40 opacity-0 backdrop-blur-md transition-opacity duration-300"
+      aria-hidden="true"></div>
+    <aside id="drawer"
+      class="fixed right-0 top-0 z-50 flex h-full w-[82%] max-w-xs translate-x-full flex-col bg-white p-6 shadow-2xl transition-transform duration-500 [transition-timing-function:cubic-bezier(.22,1,.36,1)]"
+      inert aria-label="Mobile menu">
+      <div class="flex items-center justify-between">
+        <span class="font-heading text-[1.05rem] leading-none">Winston Cabrera</span>
+        <button type="button" id="menuClose" class="-mr-2 p-2" aria-label="Close menu"><svg class="h-6 w-6" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" viewBox="0 0 24 24">
+            <path d="M5 5l14 14M19 5L5 19" />
+          </svg></button>
+      </div>
+      <nav class="mt-10 flex flex-col font-heading text-lg uppercase text-ink">
+        <a href="#about" class="drawer-link border-b border-line py-4">About</a>
+        <a href="#offer" class="drawer-link border-b border-line py-4">What I Offer</a>
+      </nav>
+      <button type="button" data-book
+        class="btn btn-accent font-heading mt-auto w-full whitespace-nowrap tracking-normal !px-4 !text-[clamp(0.72rem,3.4vw,0.9rem)]">Schedule
+        Free Call</button>
+    </aside>
+
+    <main id="main">
+
+      <!-- ================= 1. HERO ================= -->
+      <section id="top" class="hero-bg relative overflow-hidden">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-14 sm:px-8 md:grid-cols-12 md:py-20 lg:gap-16 lg:py-24">
+          <div class="md:col-span-7">
+            <h1 class="rise hd text-[2.25rem] text-ink sm:text-[3rem] lg:text-[3.8rem]" style="--d:.05s">
+              Have Questions About Your Money? <span class="text-accent">Let’s Talk.</span>
+            </h1>
+            <p class="rise mt-7 max-w-xl text-[1.2rem] leading-relaxed text-mute sm:text-xl" style="--d:.15s">
+              Whether you’re looking to protect your family, get organized, or prepare for the future, sometimes the
+              first step is simply having a conversation. Book a free 20-minute introductory call. We’ll talk about what
+              matters to you and identify a possible next step.
+            </p>
+            <div class="rise mt-10" style="--d:.25s">
+              <button type="button" data-book
+                class="btn btn-accent btn-xl w-full whitespace-nowrap font-heading uppercase tracking-normal !px-[clamp(0.75rem,3vw,2.5rem)] !text-[clamp(0.6rem,2.9vw,1rem)] sm:w-auto sm:tracking-wide">
+                <svg class="hidden h-[1.1em] w-[1.1em] shrink-0 min-[350px]:block" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="16" rx="3" />
+                  <path d="M8 3v4M16 3v4M3 10h18" />
+                </svg>
+                Book Your Free 20-Minute Call
+              </button>
+              <p class="mt-4 text-sm text-mute">Choose a time that works for you.</p>
+            </div>
+            <p class="rise mt-10 font-heading text-sm uppercase tracking-wide text-ink/70" style="--d:.35s">Clear money
+              plans. No jargon. No judgment.</p>
+          </div>
+
+          <div class="rise relative mx-auto w-full max-w-sm md:col-span-5 md:max-w-none" style="--d:.2s">
+            <div class="absolute -bottom-4 -right-4 h-3/4 w-3/4 rounded-3xl bg-accent" aria-hidden="true"></div>
+            <img src="https://i.postimg.cc/4dmFv9gS/winston-cabrera-profile.jpg" width="900" height="1200" alt="Winston Cabrera, financial advisor"
+              class="relative aspect-[4/5] w-full rounded-3xl object-cover object-top shadow-2xl">
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 2. ABOUT + WHAT I OFFER ================= -->
+      <section id="about" class="bg-white px-5 py-20 sm:px-8 md:py-28">
+        <div class="mx-auto grid max-w-7xl gap-12 md:grid-cols-12 lg:gap-20">
+          <!-- Left heading stays in view while the longer right column scrolls -->
+          <div class="md:col-span-5 md:self-start md:sticky md:top-28">
+            <div class="reveal">
+              <h2 class="h2">Hi, I’m<br>Winston Cabrera.</h2>
+              <div class="mt-6 h-1 w-16 rounded-full bg-accent"></div>
+            </div>
+          </div>
+
+          <div class="md:col-span-7">
+            <div class="reveal space-y-5 text-[1.15rem] leading-relaxed text-mute" style="--d:.1s">
+              <p>For over 15 years, I’ve helped individuals and families better understand their financial options,
+                protect what matters most, and make more confident decisions about their future.</p>
+              <p>I believe everyone deserves to feel confident about their finances, regardless of where they’re
+                starting.</p>
+              <p>Whether you’re looking to protect your family, prepare for the future, or simply get a clearer picture
+                of where you stand, I’d love to hear your story.</p>
+            </div>
+
+            <div id="offer" class="reveal mt-10 scroll-mt-24" style="--d:.1s">
+              <h3 class="font-heading text-lg uppercase leading-tight text-ink sm:text-xl">How I Can Help</h3>
+              <ul class="mt-4 flex flex-col gap-3">
+                <li
+                  class="flex items-start gap-3 text-[1rem] leading-relaxed text-ink sm:text-[1.15rem]">
+                  <span class="mt-[0.6em] h-2.5 w-2.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Life Insurance &amp; Family Protection</li>
+                <li
+                  class="flex items-start gap-3 text-[1rem] leading-relaxed text-ink sm:text-[1.15rem]">
+                  <span class="mt-[0.6em] h-2.5 w-2.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Business Protection &amp; Employee Benefits</li>
+                <li
+                  class="flex items-start gap-3 text-[1rem] leading-relaxed text-ink sm:text-[1.15rem]">
+                  <span class="mt-[0.6em] h-2.5 w-2.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Critical Illness, Disability &amp; Health Coverage</li>
+                <li
+                  class="flex items-start gap-3 text-[1rem] leading-relaxed text-ink sm:text-[1.15rem]">
+                  <span class="mt-[0.6em] h-2.5 w-2.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Mortgage Guidance</li>
+                <li
+                  class="flex items-start gap-3 text-[1rem] leading-relaxed text-ink sm:text-[1.15rem]">
+                  <span class="mt-[0.6em] h-2.5 w-2.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Investment &amp; Retirement Solutions</li>
+                <li
+                  class="flex items-start gap-3 text-[1rem] leading-relaxed text-ink sm:text-[1.15rem]">
+                  <span class="mt-[0.6em] h-2.5 w-2.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>Financial Education &amp; Debt Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 3. BOOK A CALL ================= -->
+      <section id="book" class="bg-navy px-5 py-20 text-white sm:px-8 md:py-28">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <h2 class="h2">Let’s start with a free 20-minute conversation.</h2>
+          <p class="mx-auto mt-6 max-w-2xl text-[1.15rem] leading-relaxed text-white/70">We’ll talk about where you are
+            today, what you’d like to accomplish, and whether there’s an opportunity for me to help you move forward.
+          </p>
+          <p
+            class="mt-8 flex flex-col items-center justify-center gap-1 font-medium text-white sm:flex-row sm:flex-wrap sm:gap-x-3">
+            <span>No pressure</span>
+            <span class="hidden h-2 w-2 shrink-0 rounded-full bg-accent sm:block" aria-hidden="true"></span>
+            <span>No obligation</span>
+            <span class="hidden h-2 w-2 shrink-0 rounded-full bg-accent sm:block" aria-hidden="true"></span>
+            <span>Just a genuine conversation.</span>
+          </p>
+          <button type="button" data-book
+            class="btn btn-light btn-xl group mt-10 w-full whitespace-nowrap font-heading uppercase tracking-normal !px-[clamp(0.75rem,3vw,2.5rem)] !text-[clamp(0.7rem,3.4vw,1rem)] sm:w-auto sm:tracking-wide">
+            Schedule Free Call
+            <svg class="h-5 w-5 shrink-0 transition-transform duration-300 group-hover:translate-x-1" fill="none"
+              stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+              viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-line px-5 pb-8 pt-12 sm:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-8">
+          <h3 class="font-heading text-sm uppercase tracking-wide text-ink lg:shrink-0 lg:text-base">FIND ME ON:</h3>
+          <div
+            class="grid w-full grid-cols-4 justify-items-start gap-3 sm:grid-cols-2 sm:justify-items-stretch lg:grid-cols-4">
+            <a href="https://www.facebook.com/winston.cabrera.advisor" target="_blank" rel="nofollow ugc"
+              class="social social-fb" aria-label="Facebook (opens in a new tab)">
+              <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+              </svg>
+              <span class="social-label">Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/winston.cabrera.advisor" target="_blank" rel="nofollow ugc"
+              class="social social-ig" aria-label="Instagram (opens in a new tab)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              <span class="social-label">Instagram</span>
+            </a>
+            <a href="https://www.tiktok.com/@winston.financialadvisor" target="_blank" rel="nofollow ugc"
+              class="social social-tt" aria-label="TikTok (opens in a new tab)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M16.5 3c.3 2.6 1.9 4.4 4.5 4.7v3.2a7.6 7.6 0 0 1-4.4-1.4v6.3a5.8 5.8 0 1 1-5.8-5.8c.3 0 .6 0 .9.1v3.3a2.6 2.6 0 1 0 1.8 2.5V3h3z" />
+              </svg>
+              <span class="social-label">TikTok</span>
+            </a>
+            <a href="https://www.linkedin.com/in/winston-cabrera-73429a80" target="_blank" rel="nofollow ugc"
+              class="social social-li" aria-label="LinkedIn (opens in a new tab)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2.5" />
+                <path d="M8 10.5V16M8 7.5v.01M12 16v-5.5M12 13c0-1.7 1.1-2.5 2.5-2.5S17 11.3 17 13v3" />
+              </svg>
+              <span class="social-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+        <p class="mt-10 border-t border-line pt-6 text-center text-base text-mute sm:text-[1.05rem]">© <span
+            id="year">2026</span> Winston Cabrera. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ================= BOOKING MODAL ================= -->
+    <div id="booking" class="modal fixed inset-0 z-[60] flex items-end justify-center sm:items-center sm:p-4"
+      role="dialog" aria-modal="true" aria-labelledby="bkTitle">
+      <div class="m-back absolute inset-0 bg-black/40 backdrop-blur-md" data-close></div>
+      <div id="panel"
+        class="m-panel relative max-h-[94vh] w-full overflow-y-auto overscroll-contain rounded-t-3xl bg-white shadow-2xl sm:max-w-3xl sm:rounded-3xl">
+        <div id="handle" class="flex touch-none justify-center pb-1 pt-3 sm:hidden"><span
+            class="h-1 w-10 rounded-full bg-ink/20"></span></div>
+        <div class="px-6 pb-8 pt-4 sm:px-8 sm:pt-8">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h2 id="bkTitle" class="hd text-2xl sm:text-3xl">Book a free call</h2>
+              <p id="bkSub" class="mt-2 text-sm text-mute">Pick a date and time. 20 minutes, no pressure.</p>
+            </div>
+            <button type="button" data-close
+              class="-mr-2 -mt-1 rounded-full p-2 text-mute transition hover:rotate-90 hover:bg-soft hover:text-ink"
+              aria-label="Close"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" viewBox="0 0 24 24">
+                <path d="M5 5l14 14M19 5L5 19" />
+              </svg></button>
+          </div>
+          <div id="bar" class="mt-5 flex gap-2" aria-hidden="true">
+            <span class="h-1 flex-1 overflow-hidden rounded-full bg-line"><i
+                class="block h-full w-0 bg-accent transition-[width] duration-700"></i></span>
+            <span class="h-1 flex-1 overflow-hidden rounded-full bg-line"><i
+                class="block h-full w-0 bg-accent transition-[width] duration-700"></i></span>
+          </div>
+
+          <form id="bkForm" novalidate class="mt-6">
+            <!-- STEP 1: calendar + times -->
+            <div class="step active" data-step="1">
+              <div class="grid gap-7 md:grid-cols-[1.1fr_1fr] md:gap-10">
+                <div>
+                  <div class="mb-3 flex items-center justify-between">
+                    <button type="button" id="calPrev"
+                      class="flex h-10 w-10 items-center justify-center rounded-full border border-line transition hover:border-accent hover:text-accent disabled:pointer-events-none disabled:opacity-30"
+                      aria-label="Previous month"><svg class="h-5 w-5" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M15 6l-6 6 6 6" />
+                      </svg></button>
+                    <p id="calTitle" class="font-heading text-lg uppercase" aria-live="polite"></p>
+                    <button type="button" id="calNext"
+                      class="flex h-10 w-10 items-center justify-center rounded-full border border-line transition hover:border-accent hover:text-accent disabled:pointer-events-none disabled:opacity-30"
+                      aria-label="Next month"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M9 6l6 6-6 6" />
+                      </svg></button>
+                  </div>
+                  <div class="grid grid-cols-7 gap-1 text-center text-xs text-mute" aria-hidden="true">
+                    <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                  </div>
+                  <div id="calGrid" class="mt-2 grid grid-cols-7 gap-1"></div>
+                </div>
+
+                <div>
+                  <p id="slotHead" class="mb-3 text-sm font-medium">Select a date</p>
+                  <div id="slots"
+                    class="slots-scroll grid max-h-[19rem] grid-cols-2 gap-2.5 overflow-y-auto pr-1 sm:grid-cols-3 md:grid-cols-2">
+                  </div>
+                  <p id="tzNote" class="mt-4 text-xs text-mute"></p>
+                </div>
+              </div>
+              <button type="button" id="toStep2"
+                class="btn btn-accent mt-7 w-full disabled:pointer-events-none disabled:opacity-40"
+                disabled>Continue</button>
+            </div>
+
+            <!-- STEP 2: details -->
+            <div class="step mx-auto max-w-lg" data-step="2">
+              <button type="button" id="back"
+                class="group flex w-full items-center justify-between rounded-2xl bg-soft px-5 py-4 text-left transition hover:bg-line">
+                <span><span class="block text-xs text-mute">Your time</span><span id="sum"
+                    class="font-medium"></span></span>
+                <span class="text-sm font-medium text-accent group-hover:underline">Change</span>
+              </button>
+              <div class="mt-5 space-y-3.5">
+                <div class="relative"><input class="field" id="f1" name="first_name" required minlength="2"
+                    autocomplete="given-name" placeholder=" "><label class="flabel" for="f1">First name</label></div>
+                <div class="relative"><input class="field" id="f1b" name="last_name" required minlength="2"
+                    autocomplete="family-name" placeholder=" "><label class="flabel" for="f1b">Last name</label></div>
+                <div class="relative"><input class="field" id="f2" name="email" type="email" required
+                    autocomplete="email" placeholder=" "><label class="flabel" for="f2">Email address</label></div>
+                <div class="relative"><input class="field" id="f3" name="phone" type="tel" required
+                    pattern="[0-9+()\-\s.]{7,}" autocomplete="tel" placeholder=" "><label class="flabel" for="f3">Phone
+                    number</label></div>
+                <!-- Honeypot: hidden from people, catches bots -->
+                <input type="text" name="company" id="hp" tabindex="-1" autocomplete="off" class="hidden"
+                  aria-hidden="true">
+              </div>
+
+              <div class="relative mt-3.5">
+                <textarea class="field resize-none" id="f4" name="message" rows="3" maxlength="600"
+                  placeholder=" "></textarea>
+                <label class="flabel" for="f4">What's the main thing you'd like to discuss? (Optional)</label>
+              </div>
+
+              <p id="err" class="mt-4 hidden text-sm text-red-700" role="alert">Something went wrong. Please check your
+                connection and try again.</p>
+              <button type="submit" id="send" class="btn btn-accent mt-6 w-full"><svg id="spin"
+                  class="spin hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M12 3a9 9 0 019 9" stroke-linecap="round" />
+                </svg><span id="sendTxt">Confirm appointment</span></button>
+              <p class="mt-3 text-center text-xs text-mute">No pressure. No obligation.</p>
+            </div>
+
+            <!-- STEP 3: confirmation -->
+            <div class="step mx-auto max-w-lg text-center" data-step="3">
+              <svg class="check-wrap mx-auto h-24 w-24" viewBox="0 0 100 100" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <circle cx="50" cy="50" r="46" fill="#094EEA" fill-opacity=".08" />
+                <circle class="check-c" cx="50" cy="50" r="42" pathLength="1" stroke="#094EEA" stroke-width="4"
+                  transform="rotate(-90 50 50)" />
+                <path class="check-p" d="M32 51l12 12 24-26" pathLength="1" stroke="#094EEA" stroke-width="6" />
+              </svg>
+              <h3 class="hd mt-4 text-3xl">You’re booked</h3>
+              <p class="mx-auto mt-2 max-w-sm text-mute">Winston has your request and will call you at <b id="donePhone"
+                  class="font-medium text-ink"></b>.</p>
+              <p id="doneSum"
+                class="mt-5 inline-block rounded-full bg-accent/10 px-5 py-2.5 text-sm font-medium text-accent"></p>
+              <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+                <a id="gcal" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-ghost flex-1">Add to
+                  calendar</a>
+                <button type="button" data-close class="btn btn-accent flex-1">Close</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* ==========================================================
+   CONFIG – edit this block only
+   ========================================================== */
+const CONFIG = {
+  ADVISOR_NAME: 'Winston Cabrera',
+
+  // Web3Forms (free plan). Get your access key at web3forms.com (enter Winston's email, the key is emailed to him).
+  // While the value starts with YOUR_ the page runs in demo mode and sends nothing.
+  WEB3FORMS_ACCESS_KEY: 'be785fee-9590-4103-904f-7a3721e295c4',
+
+  // Availability
+  TIMEZONE: 'America/Toronto',   // Toronto, ON (Eastern Time; handles EST/EDT automatically)
+  TZ_LABEL: 'Toronto - Eastern Time', // shown to visitors
+  WORK_DAYS: [1, 2, 3, 4, 5, 6], // 0 = Sun … 6 = Sat (Saturday has its own hours below)
+  START_HOUR: 12,                // first slot 12:00 PM
+  END_HOUR: 20,                  // calls finish by 8:00 PM (last start 7:30 PM)
+  SATURDAY_HOURS: { start: 11, end: 14 }, // Saturdays: 11:00 AM – 2:00 PM only
+  SLOT_STEP_MIN: 30,             // gap between slot start times
+  CALL_MIN: 20,                  // call length
+  LEAD_HOURS: 3,                 // minimum notice for same-day bookings
+  DAYS_AHEAD: 60,                // how far ahead people can book
+  BLOCKED_DATES: [],             // e.g. ['2026-12-25', '2026-12-26']
+
+  // While testing, the form shows Web3Forms's exact error text. Set to false when everything works.
+  DEBUG: true
+};
+
+/* ========================================================== */
+const $ = (s, c = document) => c.querySelector(s);
+const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+$('#year').textContent = new Date().getFullYear();
+
+/* ---------- page lock, mobile drawer ---------- */
+let lastFocus = null;
+const lock = on => { document.body.style.overflow = on ? 'hidden' : ''; };
+const inertPage = on => $$('header, main, footer').forEach(e => e.inert = on);
+
+const drawer = $('#drawer'), overlay = $('#overlay'), menuBtn = $('#menuOpen');
+function openMenu() {
+  overlay.classList.remove('hidden');
+  requestAnimationFrame(() => overlay.classList.remove('opacity-0'));
+  drawer.inert = false; drawer.classList.remove('translate-x-full');
+  menuBtn.setAttribute('aria-expanded', 'true'); lock(true); $('#menuClose').focus();
+}
+function closeMenu() {
+  if (drawer.inert) return;
+  overlay.classList.add('opacity-0'); drawer.classList.add('translate-x-full'); drawer.inert = true;
+  menuBtn.setAttribute('aria-expanded', 'false'); lock(false);
+  setTimeout(() => overlay.classList.add('hidden'), 300);
+}
+menuBtn.onclick = openMenu; $('#menuClose').onclick = closeMenu; overlay.onclick = closeMenu;
+$$('.drawer-link').forEach(a => a.addEventListener('click', closeMenu));
+
+/* ---------- time-zone helpers ---------- */
+const pad = n => String(n).padStart(2, '0');
+const keyOf = (y, m, d) => `${y}-${pad(m)}-${pad(d)}`;
+const dowOf = (y, m, d) => new Date(Date.UTC(y, m - 1, d)).getUTCDay();
+function zonedParts(date) {
+  const p = {};
+  new Intl.DateTimeFormat('en-US', { timeZone: CONFIG.TIMEZONE, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' })
+    .formatToParts(date).forEach(x => { p[x.type] = +x.value; });
+  p.hour = p.hour % 24; return p;
+}
+const tzOffset = date => { const p = zonedParts(date); return Date.UTC(p.year, p.month - 1, p.day, p.hour, p.minute, p.second) - Math.floor(date.getTime() / 1000) * 1000; };
+function zonedToUtc(y, m, d, mins) {
+  const guess = Date.UTC(y, m - 1, d, Math.floor(mins / 60), mins % 60);
+  const t1 = guess - tzOffset(new Date(guess));
+  return new Date(guess - tzOffset(new Date(t1)));
+}
+const longDate = (y, m, d) => new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const monthTitle = (y, m) => new Date(Date.UTC(y, m - 1, 1)).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+const clock = mins => { const h = Math.floor(mins / 60), m = mins % 60; return `${h % 12 || 12}:${pad(m)} ${h < 12 ? 'AM' : 'PM'}`; };
+
+function slotMinsFor(dow) {
+  const hrs = dow === 6 ? CONFIG.SATURDAY_HOURS : { start: CONFIG.START_HOUR, end: CONFIG.END_HOUR };
+  const out = [];
+  for (let t = hrs.start * 60; t + CONFIG.CALL_MIN <= hrs.end * 60; t += CONFIG.SLOT_STEP_MIN) out.push(t);
+  return out;
+}
+
+function slotsFor(key) {
+  const [y, m, d] = key.split('-').map(Number);
+  const dow = dowOf(y, m, d);
+  if (!CONFIG.WORK_DAYS.includes(dow) || CONFIG.BLOCKED_DATES.includes(key)) return [];
+  const all = slotMinsFor(dow);
+  const n = zonedParts(new Date());
+  if (key === keyOf(n.year, n.month, n.day)) {
+    const earliest = n.hour * 60 + n.minute + CONFIG.LEAD_HOURS * 60;
+    return all.filter(t => t >= earliest);
+  }
+  return all;
+}
+
+/* ---------- booking state + calendar ---------- */
+const bk = $('#booking'), form = $('#bkForm'), panel = $('#panel');
+const state = { key: null, mins: null, step: 1, view: null, today: null, max: null };
+
+function initDates() {
+  const n = zonedParts(new Date());
+  state.today = keyOf(n.year, n.month, n.day);
+  const mx = new Date(Date.UTC(n.year, n.month - 1, n.day + CONFIG.DAYS_AHEAD));
+  state.max = keyOf(mx.getUTCFullYear(), mx.getUTCMonth() + 1, mx.getUTCDate());
+  // open on the first month that has availability
+  let y = n.year, m = n.month;
+  for (let i = 0; i < 4; i++) {
+    const days = new Date(Date.UTC(y, m, 0)).getUTCDate();
+    let found = false;
+    for (let d = 1; d <= days; d++) if (isSelectable(keyOf(y, m, d))) { found = true; break; }
+    if (found) break;
+    m++; if (m > 12) { m = 1; y++; }
+  }
+  state.view = { y, m };
+}
+const isSelectable = key => key >= state.today && key <= state.max && slotsFor(key).length > 0;
+
+function renderCalendar() {
+  const { y, m } = state.view;
+  $('#calTitle').textContent = monthTitle(y, m);
+  const grid = $('#calGrid'); grid.innerHTML = '';
+  const first = dowOf(y, m, 1), days = new Date(Date.UTC(y, m, 0)).getUTCDate();
+  for (let i = 0; i < first; i++) grid.appendChild(document.createElement('span'));
+  for (let d = 1; d <= days; d++) {
+    const key = keyOf(y, m, d), ok = isSelectable(key);
+    const b = document.createElement('button');
+    b.type = 'button'; b.textContent = d; b.disabled = !ok; b.dataset.key = key;
+    b.className = 'cal-day' + (ok ? ' avail' : '') + (key === state.today ? ' today' : '');
+    b.setAttribute('aria-pressed', String(key === state.key));
+    b.setAttribute('aria-label', longDate(y, m, d) + (ok ? '' : ' (unavailable)'));
+    grid.appendChild(b);
+  }
+  const prevY = m === 1 ? y - 1 : y, prevM = m === 1 ? 12 : m - 1;
+  const nextY = m === 12 ? y + 1 : y, nextM = m === 12 ? 1 : m + 1;
+  const tp = state.today.split('-').map(Number), mp = state.max.split('-').map(Number);
+  $('#calPrev').disabled = prevY * 12 + prevM < tp[0] * 12 + tp[1];
+  $('#calNext').disabled = nextY * 12 + nextM > mp[0] * 12 + mp[1];
+}
+$('#calPrev').onclick = () => { const v = state.view; state.view = v.m === 1 ? { y: v.y - 1, m: 12 } : { y: v.y, m: v.m - 1 }; renderCalendar(); };
+$('#calNext').onclick = () => { const v = state.view; state.view = v.m === 12 ? { y: v.y + 1, m: 1 } : { y: v.y, m: v.m + 1 }; renderCalendar(); };
+
+$('#calGrid').addEventListener('click', e => {
+  const b = e.target.closest('.cal-day'); if (!b || b.disabled) return;
+  state.key = b.dataset.key; state.mins = null;
+  $$('.cal-day', $('#calGrid')).forEach(c => c.setAttribute('aria-pressed', String(c === b)));
+  renderSlots(); updateContinue();
+});
+
+function renderSlots() {
+  const box = $('#slots'); box.innerHTML = '';
+  if (!state.key) { $('#slotHead').textContent = 'Select a date'; box.innerHTML = '<p class="col-span-full rounded-2xl border border-dashed border-line p-5 text-center text-sm text-mute">Choose a date to see open times.</p>'; return; }
+  const [y, m, d] = state.key.split('-').map(Number);
+  $('#slotHead').textContent = longDate(y, m, d);
+  slotsFor(state.key).forEach((t, i) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.textContent = clock(t); b.setAttribute('aria-pressed', 'false');
+    b.className = 'chip pop rounded-2xl border border-line bg-white py-3 text-sm';
+    b.style.setProperty('--i', i);
+    b.onclick = () => { $$('.chip', box).forEach(c => c.setAttribute('aria-pressed', String(c === b))); state.mins = t; updateContinue(); };
+    box.appendChild(b);
+  });
+}
+const updateContinue = () => { $('#toStep2').disabled = !(state.key && state.mins !== null); };
+const summary = () => { const [y, m, d] = state.key.split('-').map(Number); return `${longDate(y, m, d)} at ${clock(state.mins)}`; };
+
+/* ---------- steps ---------- */
+const COPY = {
+  1: ['Book a free call', 'Pick a date and time. 20 minutes, no pressure.'],
+  2: ['Your details', 'Almost done. Where should I send the confirmation?'],
+  3: ['Confirmed', 'Your appointment request is in.']
+};
+function goStep(n) {
+  const back = n < state.step; state.step = n;
+  $$('.step', form).forEach(s => { const on = +s.dataset.step === n; s.classList.toggle('active', on); s.classList.toggle('back', on && back); });
+  $$('#bar i').forEach((bar, i) => bar.style.width = n > i ? '100%' : '0');
+  $('#bkTitle').textContent = COPY[n][0]; $('#bkSub').textContent = COPY[n][1];
+  panel.scrollTo({ top: 0, behavior: 'smooth' });
+  const f = $('.step.active input:not(.hidden)'); if (f && n === 2) setTimeout(() => f.focus({ preventScroll: true }), 350);
+}
+$('#toStep2').onclick = () => { $('#sum').textContent = summary() + ' (' + CONFIG.TZ_LABEL + ')'; goStep(2); };
+$('#back').onclick = () => goStep(1);
+
+/* ---------- open / close ---------- */
+let resetTimer = null;
+function resetBooking() {
+  form.reset(); Object.assign(state, { key: null, mins: null, step: 1 });
+  $('#err').classList.add('hidden');
+  $$('.field', form).forEach(f => f.classList.remove('invalid'));
+  initDates(); renderCalendar(); renderSlots(); updateContinue();
+  $$('.step', form).forEach(s => s.classList.toggle('active', s.dataset.step === '1'));
+  $$('#bar i').forEach(b => b.style.width = '0');
+  $('#bkTitle').textContent = COPY[1][0]; $('#bkSub').textContent = COPY[1][1];
+}
+function openBooking() {
+  clearTimeout(resetTimer);
+  if (state.step === 3) resetBooking();
+  else { initDates(); renderCalendar(); }
+  lastFocus = document.activeElement; bk.dataset.open = 'true'; inertPage(true); lock(true);
+  setTimeout(() => $('#calGrid .avail, [data-close]', bk)?.focus({ preventScroll: true }), 400);
+}
+function closeBooking() {
+  if (bk.dataset.open !== 'true') return;
+  bk.dataset.open = 'false'; inertPage(false); lock(false);
+  if (lastFocus) lastFocus.focus();
+  resetTimer = setTimeout(resetBooking, 700);
+}
+$$('[data-book]').forEach(b => b.addEventListener('click', () => { closeMenu(); setTimeout(openBooking, drawer.inert ? 0 : 50); }));
+$$('[data-close]', bk).forEach(b => b.addEventListener('click', closeBooking));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeBooking(); closeMenu(); } });
+
+// Drag the handle down to dismiss the bottom sheet on mobile
+(function () {
+  const h = $('#handle'); let y0 = 0, dy = 0;
+  h.addEventListener('touchstart', e => { y0 = e.touches[0].clientY; panel.style.transition = 'none'; }, { passive: true });
+  h.addEventListener('touchmove', e => { dy = Math.max(0, e.touches[0].clientY - y0); panel.style.transform = `translateY(${dy}px)`; }, { passive: true });
+  h.addEventListener('touchend', () => { panel.style.transition = ''; panel.style.transform = ''; if (dy > 110) closeBooking(); dy = 0; });
+})();
+
+/* ---------- booking notification (Web3Forms) ---------- */
+const demoMode = !CONFIG.WEB3FORMS_ACCESS_KEY || CONFIG.WEB3FORMS_ACCESS_KEY.startsWith('YOUR_');
+async function sendBooking(payload) {
+  const res = await fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    body: JSON.stringify({ access_key: CONFIG.WEB3FORMS_ACCESS_KEY, ...payload })
+  });
+  let data = {};
+  try { data = await res.json(); } catch (_) {}
+  if (!res.ok || !data.success) {
+    const e = new Error(data.message || res.statusText || 'Request failed');
+    e.status = res.status; throw e;
+  }
+}
+
+function calendarLink() {
+  const [y, m, d] = state.key.split('-').map(Number);
+  const s = zonedToUtc(y, m, d, state.mins), e = new Date(s.getTime() + CONFIG.CALL_MIN * 60000);
+  const f = dt => dt.toISOString().replace(/[-:]|\.\d{3}/g, '');
+  return 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+    + '&text=' + encodeURIComponent(`Free ${CONFIG.CALL_MIN}-minute call with ${CONFIG.ADVISOR_NAME}`)
+    + '&dates=' + f(s) + '/' + f(e)
+    + '&details=' + encodeURIComponent('Free financial conversation')
+    + '&ctz=' + encodeURIComponent(CONFIG.TIMEZONE);
+}
+
+const ERR_TEXT = $('#err').textContent.trim();
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (state.key === null || state.mins === null) { goStep(1); return; }
+  const bad = $$('.field', form).filter(f => !f.checkValidity());
+  $$('.field', form).forEach(f => f.classList.toggle('invalid', bad.includes(f)));
+  if (bad.length) { bad.forEach(f => { f.classList.remove('shake'); void f.offsetWidth; f.classList.add('shake'); }); bad[0].focus(); return; }
+  if ($('#hp').value) { goStep(3); return; } // bot: pretend success
+
+  const btn = $('#send'), err = $('#err');
+  err.classList.add('hidden'); btn.disabled = true;
+  $('#spin').classList.remove('hidden'); $('#sendTxt').textContent = 'Sending';
+
+  const first = $('#f1').value.trim(), last = $('#f1b').value.trim(), name = first + ' ' + last, email = $('#f2').value.trim(), phone = $('#f3').value.trim();
+  const when = summary(), calLink = calendarLink();
+  const payload = {
+    subject: `New call booked: ${name} - ${when}`,
+    from_name: 'Website Booking',
+    botcheck: '',
+    booking_id: 'WC-' + Date.now().toString(36).toUpperCase(),
+    name, email, phone,
+    date_time: when + ' (' + CONFIG.TZ_LABEL + ')',
+    duration: CONFIG.CALL_MIN + ' minutes',
+    message: $('#f4').value.trim() || 'No message left',
+    add_to_calendar: calLink
+  };
+
+  try {
+    if (demoMode) {
+      console.info('[Demo mode] Nothing sent. Booking:', payload);
+      await new Promise(r => setTimeout(r, 900));
+    } else {
+      await sendBooking(payload);
+    }
+    $('#donePhone').textContent = phone;
+    $('#doneSum').textContent = when + ' (' + CONFIG.TZ_LABEL + ')';
+    $('#gcal').href = calLink;
+    goStep(3);
+  } catch (e) {
+    console.error('Booking failed:', e);
+    err.textContent = ERR_TEXT + (CONFIG.DEBUG && e && e.message ? ' [' + (e.status || 'network') + ': ' + String(e.message).slice(0, 160) + ']' : '');
+    err.classList.remove('hidden');
+  }
+  finally { btn.disabled = false; $('#spin').classList.add('hidden'); $('#sendTxt').textContent = 'Confirm appointment'; }
+});
+
+$('#tzNote').textContent = `Times shown in ${CONFIG.TZ_LABEL}. Calls are ${CONFIG.CALL_MIN} minutes.`;
+initDates(); renderCalendar(); renderSlots();
+
+/* ---------- scroll reveal ---------- */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  e.target.classList.add('in'); io.unobserve(e.target);
+}), { threshold: .15 });
+$$('.reveal').forEach(el => io.observe(el));
+    </script>
+</body>
+
+</html>
+
+
